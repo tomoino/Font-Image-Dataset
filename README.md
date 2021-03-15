@@ -1,4 +1,4 @@
-# FontーImage-Dataset
+# Font-Image-Dataset
 Create a data set of character images from fonts.
 
 ## Installation
