@@ -18,7 +18,7 @@ $ git clone git@github.com:tomoino/Font-Image-Dataset.git
 1. Put the characters you want to make into an image into "./dataset/characters.txt".
 1. Run main.py.
     ```bash
-    python main.py \
+    $ python main.py \
         --charfile ./dataset/characters.txt \
         --fontsdir ./fonts \
         --labelfile ./dataset/label.csv \
