@@ -1,9 +1,9 @@
-# Japanese-Font-Dataset
-Create a data set of character images from Japanese fonts.
+# FontーImage-Dataset
+Create a data set of character images from fonts.
 
 ## Installation
 ```bash
-$ git clone git@github.com:tomoino/Japanese-Font-Dataset.git
+$ git clone git@github.com:tomoino/Font-Image-Dataset.git
 ```
 
 ## Usage
