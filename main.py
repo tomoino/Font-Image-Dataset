@@ -14,6 +14,7 @@ Args:
 """
 
 import argparse
+import os
 
 from utils import * 
 from utils.font import Font
@@ -58,11 +59,14 @@ def main(args: object) -> None:
     savedir: str = args.savedir
     label = []
 
+    if not os.path.exists(f"{savedir}"):
+        os.mkdir(f"{savedir}")
+
     for font in fonts:
         font.generate_images(chars=chars, fontsize=fontsize, imagesize=imagesize, savedir=savedir)
-        label += font.label
+        # label += font.label
 
-    save_label(label=label, labelfile=args.labelfile)
+    # save_label(label=label, labelfile=args.labelfile)
 
 
 if __name__ == '__main__':

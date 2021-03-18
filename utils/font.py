@@ -53,12 +53,14 @@ class Font:
             draw = ImageDraw.Draw(image)
             draw.font = image_font
             char_w, char_h = draw.textsize(char)
-            draw.text(((image_w-char_w)/2,(image_h-char_h)/2 - 4), char, fill=0)
+            draw.text(((image_w-char_w)/2,(image_h-char_h)/2), char, fill=0)
 
             image_name = f"{self.name}_{char}.png"
-            image_path = f"{savedir}/{image_name}"
+            if not os.path.exists(f"{savedir}/{char}"):
+                os.mkdir(f"{savedir}/{char}")
+            image_path = f"{savedir}/{char}/{image_name}"
             image.save(image_path)
-            self.label.append((image_name, char))
+            # self.label.append((image_name, char))
 
         
 
