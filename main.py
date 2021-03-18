@@ -1,7 +1,7 @@
 
 # -*- coding: utf-8 -*-
 """Main
-For making dataset from Japanese fonts.
+For making dataset from fonts.
 
 Args:
     --charfile (str): The path of list of characters.
@@ -28,7 +28,7 @@ def parser() -> object:
         
     """
 
-    parser = argparse.ArgumentParser(description='For making dataset from Japanese fonts.')
+    parser = argparse.ArgumentParser(description='For making dataset from fonts.')
     parser.add_argument('--charfile', type=str, default='./dataset/characters.txt', help='list of characters')
     parser.add_argument('--fontsdir', type=str, default='./fonts', help='directory of fonts')
     parser.add_argument('--labelfile', type=str, default='./dataset/label.csv', help='label file')
